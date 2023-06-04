@@ -1,0 +1,39 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>登录超时</title>
+    <style>
+        *{margin: 0;padding: 0;}
+         a{text-decoration: none;cursor:pointer}
+        body{text-align: center}
+        .bground{border: 0px solid #eaeaea;border-radius: 10px;width: 700px;height: 350px;background-color: #ffffff;left: 50%;margin-left: -350px;position: absolute;top: 50%;margin-top: -175px;}
+        .bground >div{display: inline-block;}
+        .log{margin-top: 96px;}
+        .wenzi{text-align: left;vertical-align: top;margin-top: 120px;margin-left: 28px;}
+        .infoo{font-size: 22px;color: #1392f1;margin-bottom: 24px;}
+        .re_log{}
+        .re_log a{border:1px solid #1392f1;border-radius: 3px;font-size: 14px;}
+        .chongxin{background-color: #1392f1;color: #ffffff;padding: 2px 13px;margin-right: 16px;}
+        .guanbi{background-color: #ffffff;color: #1392f1;padding: 2px 23px;}
+        .guanbi:hover{background-color: #1392f1;color: #ffffff;}
+        .chongxin:hover{opacity: 0.8;}
+    </style>
+
+</head>
+<body>
+
+    <div class="bground">
+
+        <div class="log"><img src="/res/app/wlxt/img/log_fail.png"></div>
+        <div class="wenzi" style="text-align: left">
+            <p class="infoo">您未登录或登录失效</p>
+            <p class="re_log">
+                <a class="chongxin" onclick="top.document.location='/'" style="cursor:pointer">登录网络学堂</a>
+                <a class="guanbi" onclick="top.window.close();" style="cursor:pointer">关闭</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
